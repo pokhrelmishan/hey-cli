@@ -2,6 +2,10 @@
 import sys
 import requests
 
+GREEN = "\033[92m"
+RED = "\033[91m"
+RESET = "\033[0m"
+
 def ask_ollama(query):
     prompt = f"""You are a Linux shell expert. The user is on Ubuntu.
 Return ONLY the shell command, nothing else. No explanation, no markdown, no backticks.
@@ -17,18 +21,18 @@ Task: {query}"""
         result = response.json()
         return result["response"].strip()
     except requests.exceptions.ConnectionError:
-        print("❌ Ollama is not running. Start it with: ollama serve")
+        print(f"{RED}❌ Ollama is not running. Start it with: ollama serve{RESET}")
         sys.exit(1)
     except requests.exceptions.Timeout:
-        print("❌ Ollama timed out. Try again.")
+        print(f"{RED}❌ Ollama timed out. Try again.{RESET}")
         sys.exit(1)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: hey \"what you want to do\"")
-        print("Example: hey \"show disk usage\"")
+        print(f"Usage: hey \"what you want to do\"")
+        print(f"Example: hey \"show disk usage\"")
         sys.exit(1)
 
     query = " ".join(sys.argv[1:])
     command = ask_ollama(query)
-    print(command)
+    print(f"{GREEN}{command}{RESET}")
