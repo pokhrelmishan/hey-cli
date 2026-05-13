@@ -1,6 +1,6 @@
 ## Preview
 
-▶️ [Watch demo on asciinema]([https://asciinema.org/a/hOJEQnDvwxOuHNv7](https://asciinema.org/a/hOJEQnDvwxOuHNv7))
+![demo](demo.gif)
 
 # hey 🤖
 
