@@ -1,3 +1,9 @@
+
+
+## Preview
+
+[![asciicast]([https://asciinema.org/a/hOJEQnDvwxOuHNv7.svg)](https://asciinema.org/a/hOJEQnDvwxOuHNv7)](https://asciinema.org/a/hOJEQnDvwxOuHNv7.svg)](https://asciinema.org/a/hOJEQnDvwxOuHNv7))
+
 # hey 🤖
 
 A local AI-powered terminal assistant that converts natural language to shell commands. Runs 100% locally — no API key, no internet required.
