@@ -1,8 +1,6 @@
-
-
 ## Preview
 
-[![asciicast]([https://asciinema.org/a/hOJEQnDvwxOuHNv7.svg)](https://asciinema.org/a/hOJEQnDvwxOuHNv7)](https://asciinema.org/a/hOJEQnDvwxOuHNv7.svg)](https://asciinema.org/a/hOJEQnDvwxOuHNv7))
+▶️ [Watch demo on asciinema]([https://asciinema.org/a/hOJEQnDvwxOuHNv7](https://asciinema.org/a/hOJEQnDvwxOuHNv7))
 
 # hey 🤖
 
