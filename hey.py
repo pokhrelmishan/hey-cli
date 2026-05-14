@@ -29,9 +29,21 @@ Task: {query}"""
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print(f"Usage: hey \"what you want to do\"")
-        print(f"Example: hey \"show disk usage\"")
+        print("Usage: hey \"what you want to do\"")
+        print("Example: hey \"show disk usage\"")
         sys.exit(1)
+    
+    if sys.argv[1] == "--help" or sys.argv[1] == "-h":
+        print("Usage: hey \"what you want to do\"")
+        print()
+        print("Examples:")
+        print("  hey \"show disk usage\"")
+        print("  hey \"find files bigger than 100MB\"")
+        print("  hey \"list all running processes\"")
+        print()
+        print("Options:")
+        print("  --help, -h    Show this help message")
+        sys.exit(0)
 
     query = " ".join(sys.argv[1:])
     command = ask_ollama(query)
